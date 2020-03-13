@@ -19,7 +19,11 @@
             </h1>
             <div class="search_box">
                 <form action="#">
-                    <input type="text" placeholder="검색어를 입력하세요.">
+                    <input type="text" list="data" placeholder="검색어를 입력하세요.">
+                    <datalist id="data">
+                        <option>디자인하우스</option>
+                        <option>디자인하우스</option>
+                    </datalist>
                     <input type="submit" id="search">
                     <label for="search"><img src="img/icon_search.png" alt="검색" title="검색"></label>
                 </form>
@@ -28,6 +32,7 @@
                 <a href="login.html">MY</a>
                 <a href="login.html">LOGIN</a>
             </nav>
+            <span></span>
         </header>
         <section class="visual_box">
             <figure>
@@ -41,22 +46,44 @@
                     <img src="img/happy.png" alt="">
                 </p>
             </article>
-            <a href="#"></a>
+            <span><img src="img/icon_share.png" alt=""></span>
+            <div class="share_box">
+                <span><img src="img/icon_close.png" alt=""></span>
+                <span><img src="img/icon_facebook_w.png" alt=""></span>
+                <span><img src="img/icon_twitter_w.png" alt=""></span>
+                <span><img src="img/icon_kakaostory_w.png" alt=""></span>
+            </div>
             <div class="vis_button">
-                <a href="#" class="on"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
+                <span class="on"></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </section>
+        <ul class="moblie_banner">
+                <li>
+                    <a href="class_tour.html">클래스 &amp; 투어</a>
+                    <span class="border_top"></span>
+                    <span class="border_right"></span>
+                    <span class="border_bottom"></span>
+                    <span class="border_left"></span>
+                </li>
+                <li>
+                    <a href="event.html">이벤트</a>
+                    <span class="border_top"></span>
+                    <span class="border_right"></span>
+                    <span class="border_bottom"></span>
+                    <span class="border_left"></span>
+                </li>
+        </ul>
         <section class="content_box">
             <ul class="sub_menu">
-                <li class="on"><a href="#">ALL</a></li>
-                <li><a href="#">월간디자인</a></li>
-                <li><a href="#">행복이가득한집</a></li>
-                <li><a href="#">마이웨딩</a></li>
-                <li><a href="#">맘앤앙팡</a></li>
-                <li><a href="#">럭셔리</a></li>
+                <li class="on">ALL</li>
+                <li>월간디자인</li>
+                <li>행복이가득한집</li>
+                <li>마이웨딩</li>
+                <li>맘앤앙팡</li>
+                <li>럭셔리</li>
                 <li><a href="login.html">MY Magazine</a></li>
             </ul>
             <div class="class_event">
@@ -74,11 +101,14 @@
                             <li><a href="#">리놀륨 판화 클래스</a></li>
                         </ul>
                         <div>
-                            <em>[봄 학기 강좌]</em>
-                            <strong>요리 연구가 김정은의
-                            임산물 활용 제철 요리</strong>
-                            <small>모집기간: 2020. 01. 23 ~ 03. 11</small>
-                            <a href="#">자세히보기</a>
+                            <figure><img src="img/bg_class.jpg" alt=""></figure>
+                            <figcaption>
+                                <em>[봄 학기 강좌]</em>
+                                <strong>요리 연구가 김정은의
+                                임산물 활용 제철 요리</strong>
+                                <small>모집기간: 2020. 01. 23 ~ 03. 11</small>
+                                <a href="class_tour.html">자세히보기</a>
+                            </figcaption>
                         </div>
                     </div>
                 </div>
@@ -89,37 +119,37 @@
             </div>
             <ul class="article_con">
                 <li>
-                    <a href="#"><img src="img/bg_content_1.jpg" alt="">
+                    <a href="detail1.html"><img src="img/bg_content_1.jpg" alt="">
                     <p>밸런타인데이의 전령사가 되어줄, 사랑스러운 패키지의 뷰티 아이템.</p></a>
                     <div>
-                        <a href="#">VALENTINE VIBES</a>
+                        <a href="detail1.html">VALENTINE VIBES</a>
                         <span>2020. 2</span>
                         <img src="img/luxury.png" alt="">
                     </div>
                 </li>
                 <li>
-                    <a href="#"><img src="img/bg_content_2.jpg" alt="">
+                    <a href="detail2.html"><img src="img/bg_content_2.jpg" alt="">
                     <p>49㎡의 작은 오피스텔을 인테리어 디자이너가 레노베이션하고, 라이프스타일 디렉터가 꾸몄다. 1인용 취향 실험실 같은 집에서 삶과 일이 더욱 즐거워진다.</p></a>
                     <div>
-                        <a href="#">용산맨해튼</a>
+                        <a href="detail2.html">용산맨해튼</a>
                         <span>2020. 2</span>
                         <img src="img/happy.png" alt="">
                     </div>
                 </li>
                 <li>
-                    <a href="#"><img src="img/bg_content_3.jpg" alt="">
+                    <a href="detail3.html"><img src="img/bg_content_3.jpg" alt="">
                     <p>사무 환경의 변화는 쉽게 일어나지 않는다. 요즘 뜨는 커뮤니케이션 툴을 도입한다고 해서, 최신식 공유 오피스에 입주한다고 해서 단번에 얻어지는 결과가 아니다.</p></a>
                     <div>
-                        <a href="detail.html">퍼시스그룹 사옥 리뉴얼</a>
+                        <a href="detail3.html">퍼시스그룹 사옥 리뉴얼</a>
                         <span>2020. 2</span>
                         <img src="img/design.png" alt="">
                     </div>
                 </li>
                 <li>
-                    <a href="#"><img src="img/bg_content_4.jpg" alt="">
+                    <a href="detail4.html"><img src="img/bg_content_4.jpg" alt="">
                     <p>경이로울 만큼 풍요로운 대자연, 이러한 신의 축복을 온몸으로 누리는 여유로운 사람들, 활기 넘치는 도시 속 생생한 미식을 맛볼 수 있는 천국이 존재한다면 바로 여기, 미국 캘리포니아다! 팜투포크 요리의 최대 중심지인 새크라멘토, 미식가의 성지로 유명한 샌프란시스코, 자유로운 창의적 도시 버클리로 즐거운 미식 여행을 떠났다.</p></a>
                     <div>
-                        <a href="#">미식의 기쁨 - 1</a>
+                        <a href="detail4.html">미식의 기쁨 - 1</a>
                         <span>2020. 2</span>
                         <img src="img/happy.png" alt="">
                     </div>
@@ -148,8 +178,9 @@
         <section class="banner_box">
             <a href="subscription.html" class="banner_1">
                 <div>
-                    <img src="img/banner_text.png" alt="">
-                    <span>M플러스멤버십 정기구독 회원을 위한 특별한 혜택이 제공됩니다.</span>
+                    <figure></figure>
+                    <figcaption>M플러스멤버십 정기구독 회원을 위한
+                    특별한 혜택이 제공됩니다.</figcaption>
                 </div>
                 <span class="circle"></span>
             </a>
