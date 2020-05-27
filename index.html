@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="shortcur icon" href="img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -35,23 +38,80 @@
             <span></span>
         </header>
         <section class="visual_box">
-            <figure>
-                <a href="#"><img src="img/bg_visual.jpg" alt=""></a>
-            </figure>
-            <article>
-                <span>2020. 01</span>
-                <h2><a href="#">새해에도 든든하게</a></h2>
-                <p>
-                    만두에는 복福을 기원하는 마음이 담겨 있다. 그 어느 때보다 음식을 나누기 좋은 새해 첫 달, 가정간편식 시장을 선도하는 오뚜기에서 선보인 프리미엄 X.O. 만두로 정성 가득한 별미 상차림을 제안한다.
-                    <img src="img/happy.png" alt="">
-                </p>
-            </article>
-            <span><img src="img/icon_share.png" alt=""></span>
+            <ul>
+                <li class="on">
+                    <figure>
+                        <a href="detail2.html"><img src="img/article_img_2.jpg" alt=""></a>
+                    </figure>
+                    <figcaption>
+                        <span>2020. 02</span>
+                        <h2><a href="detail2.html">용산맨해튼</a></h2>
+                        <p>
+                           49㎡의 작은 오피스텔을 인테리어 디자이너가 레노베이션하고, 라이프스타일 디렉터가 꾸몄다. 1인용 취향 실험실 같은 집에서 삶과 일이 더욱 즐거워진다.
+                        </p>
+                        <img src="img/happy.png" alt="">
+                    </figcaption>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detail1.html"><img src="img/article_img_1.jpg" alt=""></a>
+                    </figure>
+                    <figcaption>
+                        <span>2020. 02</span>
+                        <h2><a href="detail1.html">VALENTINE VIBES</a></h2>
+                        <p>
+                            밸런타인데이의 전령사가 되어줄, 사랑스러운 패키지의 뷰티 아이템.
+                        </p>
+                        <img src="img/luxury.png" alt="">
+                    </figcaption>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detail3.html"><img src="img/article_img_3.jpg" alt=""></a>
+                    </figure>
+                    <figcaption>
+                        <span>2020. 02</span>
+                        <h2><a href="detail3.html">퍼시스그룹 사옥
+                        리뉴얼</a></h2>
+                        <p>    
+                            사무 환경의 변화는 쉽게 일어나지 않는다. 요즘 뜨는 커뮤니케이션 툴을 도입한다고 해서, 최신식 공유 오피스에 입주한다고 해서 단번에 얻어지는 결과가 아니다.
+                        </p>
+                        <img src="img/design.png" alt="">
+                    </figcaption>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detail4.html"><img src="img/article_img_4.jpg" alt=""></a>
+                    </figure>
+                    <figcaption>
+                        <span>2020. 02</span>
+                        <h2><a href="detail4.html">미식의 기쁨 - 1</a></h2>
+                        <p>
+                            경이로울 만큼 풍요로운 대자연, 이러한 신의 축복을 온몸으로 누리는 여유로운 사람들, 활기 넘치는 도시 속 생생한 미식을 맛볼 수 있는 천국이 존재한다면 바로 여기, 미국 캘리포니아다! 팜투포크 요리의 최대 중심지인 새크라멘토, 미식가의 성지로 유명한 샌프란시스코, 자유로운 창의적 도시 버클리로 즐거운 미식 여행을 떠났다.
+                        </p>
+                        <img src="img/happy.png" alt="">
+                    </figcaption>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detail2.html"><img src="img/article_img_2.jpg" alt=""></a>
+                    </figure>
+                    <figcaption>
+                        <span>2020. 02</span>
+                        <h2><a href="detail2.html">용산맨해튼</a></h2>
+                        <p>
+                           49㎡의 작은 오피스텔을 인테리어 디자이너가 레노베이션하고, 라이프스타일 디렉터가 꾸몄다. 1인용 취향 실험실 같은 집에서 삶과 일이 더욱 즐거워진다.
+                        </p>
+                        <img src="img/happy.png" alt="">
+                    </figcaption>
+                </li>
+            </ul>
+            <span class="share_btn"><img src="img/icon_share.png" alt=""></span>
             <div class="share_box">
-                <span><img src="img/icon_close.png" alt=""></span>
-                <span><img src="img/icon_facebook_w.png" alt=""></span>
-                <span><img src="img/icon_twitter_w.png" alt=""></span>
-                <span><img src="img/icon_kakaostory_w.png" alt=""></span>
+                <span class="close_btn"><img src="img/icon_close.png" alt=""></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
             <div class="vis_button">
                 <span class="on"></span>
@@ -94,20 +154,52 @@
                     </div>
                     <div class="cl_list">
                         <ul>
-                            <li class="on"><a href="#">임산물 활용 제철 요리 </a></li>
-                            <li><a href="#">홈 파티 요리</a></li>
-                            <li><a href="#">나전 소반 만들기</a></li>
-                            <li><a href="#">프리미엄 손님 초대상</a></li>
-                            <li><a href="#">리놀륨 판화 클래스</a></li>
+                            <li class="on"><span>임산물 활용 제철 요리 </span></li>
+                            <li><span>밀크티 클래스</span></li>
+                            <li><span>감각적 요리 클래스</span></li>
+                            <li><span>봄맞이 손님 초대 요리</span></li>
+                            <li><span>봄날의 가드닝</span></li>
                         </ul>
                         <div>
-                            <figure><img src="img/bg_class.jpg" alt=""></figure>
+                            <figure><img src="img/bg_class_0.jpg" alt=""></figure>
                             <figcaption>
-                                <em>[봄 학기 강좌]</em>
-                                <strong>요리 연구가 김정은의
-                                임산물 활용 제철 요리</strong>
-                                <small>모집기간: 2020. 01. 23 ~ 03. 11</small>
-                                <a href="class_tour.html">자세히보기</a>
+                                <ul class="list_con">
+                                    <li class="on">
+                                        <em>[봄 학기 강좌]</em>
+                                        <strong>요리 연구가 김정은의
+                                        임산물 활용 제철 요리</strong>
+                                        <small>모집기간: 2020. 01. 23 ~ 03. 11</small>
+                                        <a href="http://www.designhouse.co.kr/classtour/view/730">자세히보기</a>
+                                    </li>
+                                    <li>
+                                        <em>[헤르만의 정원]</em>
+                                        <strong>장유정 대표의
+                                        밀크티 클래스</strong>
+                                        <small>모집기간: 2020. 02. 26 ~ 04. 13</small>
+                                        <a href="http://www.designhouse.co.kr/classtour/view/731">자세히보기</a>
+                                    </li>
+                                    <li>
+                                        <em>[안티트러스트]</em>
+                                        <strong>장진모 셰프의
+                                        감각적 요리 클래스</strong>
+                                        <small>모집기간: 2020. 02. 26 ~ 04. 16</small>
+                                        <a href="http://www.designhouse.co.kr/classtour/view/734">자세히보기</a>
+                                    </li>
+                                    <li>
+                                        <em>[봄 학기 강좌]</em>
+                                        <strong>홍신애 요리 연구가의
+                                        봄맞이 손님 초대 요리</strong>
+                                        <small>모집기간: 2020. 02. 26 ~ 04. 05</small>
+                                        <a href="http://www.designhouse.co.kr/classtour/view/735">자세히보기</a>
+                                    </li>
+                                    <li>
+                                        <em>[틸테이블]</em>
+                                        <strong>보태니컬 디자이너 오주원의
+                                        봄날의 가드닝</strong>
+                                        <small>모집기간: 2020. 02. 26 ~ 04. 09</small>
+                                        <a href="http://www.designhouse.co.kr/classtour/view/732">자세히보기</a>
+                                    </li>
+                                </ul>
                             </figcaption>
                         </div>
                     </div>

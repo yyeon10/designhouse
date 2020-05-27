@@ -82,11 +82,13 @@ article .art_con figure {
     top: 0;
     bottom: 0;
     margin-bottom: 10px;
+    overflow: hidden;
 }
 
 article .art_con figure div {
     width: 100%;
     font-size: 0;
+    display: flex;
 }
 
 article .art_con figure div.more:after {
@@ -147,7 +149,7 @@ article .art_con figure p {
     transform: translateY(-50%) translateX(-50%);
 }
 
-article .art_con figure:hover p {
+article .art_con figure p.on {
     opacity: 1;
 }
 

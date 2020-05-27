@@ -90,10 +90,16 @@ body {
     width: 20%;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 .content_box .con_list ul li figure img {
     width: 100%;
+    transition: .5s;
+}
+
+.content_box .con_list ul li figure img:hover {
+    transform: scale(1.05);
 }
 
 .content_box .con_list ul li figcaption {
@@ -148,12 +154,13 @@ body {
     margin: 0 0 150px 0;
 }
 
-.content_box .list_control > a {
+.content_box .list_control > span {
     font-size: 0.833em;
     padding: 10px;
+    cursor: pointer;
 }
 
-.content_box .list_control > a:hover {
+.content_box .list_control > span:hover {
     font-weight: bold;
 }
 
@@ -167,11 +174,12 @@ body {
     position: relative;
 }
 
-.content_box .list_control ul li a {
+.content_box .list_control ul li span {
     padding: 10px;
+    cursor: pointer;
 }
 
-.content_box .list_control ul li a:after {
+.content_box .list_control ul li span:after {
     content: "";
     width: 30px;
     height: 30px;
@@ -183,12 +191,12 @@ body {
     display: none;
 }
 
-.content_box .list_control ul li.on a:after {
+.content_box .list_control ul li.on span:after {
     display: block;
     background: #fdd000;
 }
 
-.content_box .list_control ul li:hover a:after {
+.content_box .list_control ul li:hover span:after {
     display: block;
 }
 

@@ -1,4 +1,5 @@
 @import url(common.css);
+@import url(calendar.css);
 body {
     background: #fafafa;
 }
@@ -158,6 +159,7 @@ body {
     font-size: 1.111em;
     vertical-align: middle;
     padding-right: 10px;
+    
 }
 
 .content_box .con_list > ul li figcaption div span {
@@ -224,12 +226,13 @@ body {
     margin: 0 0 150px 0;
 }
 
-.content_box .list_control > a {
+.content_box .list_control > span {
     font-size: 0.833em;
     padding: 10px;
+    cursor: pointer;
 }
 
-.content_box .list_control > a:hover {
+.content_box .list_control > span:hover {
     font-weight: bold;
 }
 
@@ -243,11 +246,12 @@ body {
     position: relative;
 }
 
-.content_box .list_control ul li a {
+.content_box .list_control ul li span {
     padding: 10px;
+    cursor: pointer;
 }
 
-.content_box .list_control ul li a:after {
+.content_box .list_control ul li span:after {
     content: "";
     width: 30px;
     height: 30px;
@@ -259,12 +263,12 @@ body {
     display: none;
 }
 
-.content_box .list_control ul li.on a:after {
+.content_box .list_control ul li.on span:after {
     display: block;
     background: #fdd000;
 }
 
-.content_box .list_control ul li:hover a:after {
+.content_box .list_control ul li:hover span:after {
     display: block;
 }
 
@@ -280,14 +284,14 @@ body {
     width: 65%;
 }
 
-.bottom_box .list span {
+.bottom_box .list > span {
     margin-bottom: 15px;
     padding: 0 5px;
     display: flex;
     justify-content: space-between;
 }
 
-.bottom_box .list span em {
+.bottom_box .list > span em {
     font-style: normal;
     font-size: 1.389em;
     font-weight: bold;
@@ -303,34 +307,47 @@ body {
 }
 
 .bottom_box .list ul li {
-    background: #fff;
+    background: #fff url(../img/arrow_under.png) no-repeat right 30px top 25px;
     width: 100%;
-    transition: background .5s;
+    transition: background-color .5s;
+    padding: 20px;
 }
 
-.bottom_box .list ul li a {
+.bottom_box .list ul li:hover {
+    background: #eee url(../img/arrow_under.png) no-repeat right 30px top 25px;
+}
+
+.bottom_box .list ul li.active,
+.bottom_box .list ul li.active:hover {
+    background: #eee url(../img/arrow_upper.png) no-repeat right 30px top 25px;
+}
+
+.bottom_box .list ul li span {
     width: 100%;
-    line-height: 3.5em;
-    padding: 0 30px;
     color: #666;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
 }
 
-.bottom_box .list ul li a em {
+.bottom_box .list ul li div {
+    white-space: pre-line;
+    margin-top: 20px;
+    padding: 30px;
+    background: #fff;
+    display: none;
+    line-height: 1.5em;
+}
+
+.bottom_box .list ul li span em {
     color: #666;
     font-style: normal;
     font-weight: bold;
 }
 
-.bottom_box .list ul li:hover {
-    background: #eee;
-}
-
 .bottom_box .banner {
     width: 30%;
-    height: 440px;
+    height: 435px;
     background: url(../img/pattern.png);
     overflow: hidden;
     position: relative;

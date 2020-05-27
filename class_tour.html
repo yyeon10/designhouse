@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="css/class_tour.css">
     <link rel="shortcur icon" href="img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800|Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/class_tour.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -42,18 +47,22 @@
                 <li>종료</li>
             </ul>
             <form class="calander">
-                <input type="date" id="claButton">
-                <label for="claButton">
+                <input type="text" placeholder="date picker">
+                <div id="calBox" style="width:320px; height:320px;">
+                    
+                </div>
+                
+                <label for="claButton" class="aa">
                     <figure>
-                        <img src="img/icon_calendar.png" alt="">
+                        <img src="img/icon_calendar.png" alt="" id="dt">
                     </figure>
                     <figcaption>달력보기</figcaption>
                 </label>
             </form>
             <section class="con_list">
                 <div>
-                    <em>2020.02.07 부터 2020.02.20 까지의 검색 결과</em>
-                    <small>총 2건</small>
+                    <em></em>
+                    <small></small>
                 </div>
                 <ul>
                     <li>
@@ -62,18 +71,19 @@
                         </figure>
                         <figcaption>
                             <div>
-                                <strong>옥인다실 ‘차의 시간’</strong>
+                                <strong>규방도감 우영미 요리 연구가의
+                                제철 집밥</strong>
                                 <span>모집중</span>
                                 <span>마감임박</span>
                             </div>
-                            <em>서촌 ‘옥인다실’에서 백자와 분청을 이용한 발효차 우리기를 배워보세요.</em>
+                            <em>삼청동의 아늑한 한옥 ‘규방도감’에서 건강하고 정갈한 집밥 요리를 배워보세요.</em>
                             <ul>
-                                <li>모집기간: 2019.12.24 ~ 2020.02.10</li>
-                                <li>참가인원: 2 명</li>
-                                <li>장소: 서촌 옥인다실</li>
-                                <li>참가비: 100,000원 (재료비 포함)</li>
+                                <li>모집기간: 	2020. 04. 03 ~ 2020. 05. 22</li>
+                                <li>참가인원: 3 명</li>
+                                <li>장소: 삼청동 규방도감</li>
+                                <li>참가비: 360,000원 (재료비 포함)</li>
                             </ul>
-                            <a href="">상세보기</a>
+                            <a href="http://www.designhouse.co.kr/classtour/view/736">상세보기</a>
                         </figcaption>
                     </li>
                     <li>
@@ -82,32 +92,32 @@
                         </figure>
                         <figcaption>
                             <div>
-                                <strong>소울다이닝 김희은 셰프의 홈 파티 요리</strong>
+                                <strong>브루어리304 수제 맥주와 안주 요리</strong>
                                 <span>모집중</span>
                                 <span>마감임박</span>
                             </div>
-                            <em>해방촌의 핫한 레스토랑 ‘소울다이닝’에서 멋진 홈 파티를 연출할 수 있는 유럽 스타일의 손쉬운 파티 요리를 배워보세요.</em>
+                            <em>서대문 브루어리304에서 수제 맥주의 매력에 푹 빠져보세요.</em>
                             <ul>
-                                <li>모집기간: 2020.03.20 ~ 2020.05.22</li>
-                                <li>참가인원: 10 명</li>
-                                <li>장소: 용산동 소울다이닝</li>
-                                <li>참가비: 600,000원 (재료비 포함)</li>
+                                <li>모집기간: 2020.03.24 ~ 2020.05.20</li>
+                                <li>참가인원: 8 명</li>
+                                <li>장소: 서대문 브루어리304</li>
+                                <li>참가비: 120,000원 (재료비 포함)</li>
                             </ul>
-                            <a href="">상세보기</a>
+                            <a href="http://www.designhouse.co.kr/classtour/view/739">상세보기</a>
                         </figcaption>
                     </li>
                 </ul>
             </section>
             <div class="list_control">
-                <a href="">&lt;</a>
+                <span>&lt;</span>
                 <ul>
-                    <li class="on"><a href="">1</a></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href="">4</a></li>
-                    <li><a href="">5</a></li>
+                    <li class="on"><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><span>3</span></li>
+                    <li><span>4</span></li>
+                    <li><span>5</span></li>
                 </ul>
-                <a href="">&gt;</a>
+                <span>&gt;</span>
             </div>
         </section>
         <section class="bottom_box">
@@ -117,12 +127,96 @@
                     <a href="#">+모두보기</a>
                 </span>
                 <ul>
-                    <li><a href="#"><em>[투어]</em> 취소/환불은 어떤 기준으로 진행되나요?</a></li>
-                    <li><a href="#"><em>[클래스]</em> 취소/환불은 어떤 기준으로 진행되나요?</a></li>
-                    <li><a href="#"><em>[투어]</em> 여행 신청 취소는 어떻게 해야 하나요?</a></li>
-                    <li><a href="#"><em>[클래스]</em> 사정이 있어 수강하지 못할 경우, 대리수강 가능한가요?</a></li>
-                    <li><a href="#"><em>[투어]</em> 가상계좌 (온라인 입금)으로 여행을 신청한 경우, 언제까지 입금을 해야하나요?</a></li>
-                    <li><a href="#"><em>[클래스]</em> 수업 신청이 정상적으로 되었는지 어디서 확인할 수 있나요?</a></li>
+                    <li>
+                        <span><em>[투어]</em> 취소/환불은 어떤 기준으로 진행되나요?</span>
+                        <div>* 여행 신청이 마감이 된 이후에는 취소/변경/환불 불가
+
+                            * 여행 출발일 20일전까지 취소 수수료 없이 취소해드립니다. 
+
+                            1) 신용카드 
+                             - 신용카드 결제 시, 취소 방식 : 신용카드 승인 취소    
+                             - 접수 완료 후 4~5일 후 취소 확인 가능
+                             - 취소 수수료 없음
+                             - 온라인/모바일로 취소 접수 시, 만약의 상황을 위해 고객환불 계좌 필요
+
+                            2) 가상계좌
+                             - 가상계좌(무통장 입금) 시, 취소 방식 :  고객계좌 환불
+                             - 접수 완료 후 7일 이내 확인 가능(영업일 기준)
+                             - 송금수수료 500원 차감
+                             - 취소 수수료 없음
+
+                            * 여행 출발일로부터 20일 이후부터 출발일 당일까지는 취소 수수료가 발행합니다. 
+
+                            1) 투어 취소 수수료율 
+                            - 여행 출일 20일~7일전 : 10%    
+                            - 여행 출일 6일~1일전 : 20%
+                            - 여행 출일 당일 : 50%
+
+                            2) 취소/환불  방식
+                            결제수단에 관계없이, 취소 수수료 차감 후 고객계좌 환불
+
+                            3) 접수 완료 후 7일 이내 확인 가능 (영업일 기준)
+
+                            4) 취소 수수료 외에 송금수수료 500원 차감  
+
+                            * 취소 /환불 문의는 02-2262-7222로 문의해 주세요. (월~금  오전 9시~오후 6시)
+                        </div>
+                    </li>
+                    <li>
+                        <span><em>[클래스]</em> 취소/환불은 어떤 기준으로 진행되나요?</span>
+                        <div>1) 취소 및 변경
+                            환불 및 취소 관련 문의는 클래스 고객센터(02-2262-7222)로 연락주세요. (월~금 오전 9시-오후6시)
+                            예약 변경 및 취소의 시기에 따라 수수료가 부과될 수 있습니다.
+
+                            2) 환불 규정
+                            개강 7일 전까지 취소 : 전액 환불
+                            개강 3일 전까지 취소 : 70% 환불
+                            개강 2일 전~ : 환불 불가
+                            
+                            * 날짜는 영업일 기준입니다.
+
+                            * 클래스는 7일 전 모집을 마감하여, 인원수에 맞추어 재료 구입 및 진행 준비를 합니다. 개강일에 임박하여 취소 시, 준비해 둔 재료를 사용하지 못하는 상황과 더불어 수강을 원했던 분이 수강을 하지 못하는 상황에 놓여 취소 수수료를 부과하오니 이 점 양해 바랍니다.  
+
+                            3) 결제 방식 별 취소 처리
+                            * 신용카드 : 승인 취소
+                            - 접수 완료 후 4~5일 후 취소 확인 가능
+
+                            * 가상계좌 : 고객 계좌 환불
+                            - 접수 완료 후 7일 이내 확인 가능 (영업일 기준)
+                        </div>
+                    </li>
+                    <li>
+                        <span><em>[투어]</em> 여행 신청 취소는 어떻게 해야 하나요?</span>
+                        <div>* 인터넷으로 신청하신 경우에는 인터넷 및 전화(유선)상으로 취소 접수 가능합니다. 
+                            * 전화(유선)로 신청하신 경우에는 전화(유선)으로만 취소 접수 가능합니다.
+                            * 여행 신청이 마감이 된 이후에는 취소/변경/환불 불가합니다. 단, 여행 신청 마감 전에는 아래와 같은 기준으로 취소 및 환불을 해드립니다.
+                            * 취소 /환불 문의는 02-2262-7222로 문의해 주세요. (월~금  오전 9시~오후 6시)
+                        </div>
+                    </li>
+                    <li>
+                        <span><em>[클래스]</em> 사정이 있어 수강하지 못할 경우, 대리수강 가능한가요?</span>
+                        <div>* 대리 수강이 가능합니다.
+                            * 단, 수업 시작일 1일전까지 [1:1 문의함] 또는 고객센터(02-2275-7222)로 문의해 주세요.
+                            대리 출석하시는 분의 성함과 연락처를 남겨 주셔야 합니다.
+                            * 기타 상세 문의는 02-2262-7222로 문의해 주세요. (월~금  오전 9시~오후 6시)
+                        </div>
+                    </li>
+                    <li>
+                        <span><em>[투어]</em> 가상계좌 (온라인 입금)으로 여행을 신청한 경우, 언제까지 입금을 해야하나요?</span>
+                        <div>* 가상계좌(온라인 입금)으로 여행을 신청하신 경우에는 신청일로부터 10일안에 여행 비용의 50% 선입금하셔야 합니다.
+                            * 여행 출발일로부터 1달(30일)전, 여행 비용을 완납하셔야 여행이 확정됩니다.
+                            * 기타 상세 문의는 02-2262-7222로 문의해 주세요. (월~금  오전 9시~오후 6시)
+                        </div>
+                    </li>
+                    <li>
+                        <span><em>[클래스]</em> 수업 신청이 정상적으로 되었는지 어디서 확인할 수 있나요?</span>
+                        <div>* 수강 신청하신 내역은 [마이페이지 > 나의 결제 내역] 에서 확인가능하십니다.
+                            - 신용카드 : 결제 완료 시 즉시 가능
+                            - 그 외 결제 수단 : 입금일 기준 2일 후 확인 가능 (영업일 기준)
+                            
+                            * 기타 상세 문의는 02-2262-7222로 문의해 주세요. (월~금  오전 9시~오후 6시)
+                        </div>
+                    </li>
                 </ul>
             </div>
             <div class="banner">
